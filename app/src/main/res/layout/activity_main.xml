@@ -9,20 +9,28 @@
     android:layout_margin="10dp">
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese Nombre"
-        android:inputType="textPersonName" />
-
-    <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Ingrese Correo"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese Clave"
+        android:inputType="textPersonName|textPassword"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/chkRecordar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recordar Cuenta" />
 
     <Button
         android:id="@+id/btnGuardar"
